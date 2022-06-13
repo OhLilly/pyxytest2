@@ -1,0 +1,19 @@
+version: 2
+
+sources: 
+  - name: dev
+    database: dev
+    schema: backend_prod
+    tables:
+      - name: product_paired
+      - name: deposit_expired
+      - name: deposit_unpaired
+      - name: identifies
+      - name: payment_succeeded
+      - name: product_returned
+      - name: tracks
+      - name: user_deleted
+      - name: user_signed_up
+      - name: users
+      - name: deposit_created
+      - name: deposit_paired

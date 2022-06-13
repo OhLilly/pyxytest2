@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: raw_dev_prodbackend_depositcreated
+    columns:
+      - name: deposit_id
+        tests:
+          - unique

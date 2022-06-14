@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: deposit_created
+    description: un deposit unique par ligne
+    columns:
+      - name: deposit_id
+        description: primary key for deposit created
+        

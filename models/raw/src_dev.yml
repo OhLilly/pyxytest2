@@ -3,7 +3,7 @@ version: 2
 sources: 
   - name: dev
     database: dev
-    schema: backend_prod
+    schema: prod_backend
     tables:
       - name: product_paired
       - name: deposit_expired

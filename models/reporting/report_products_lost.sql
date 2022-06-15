@@ -5,9 +5,9 @@ select
     max(sent_at) as derniere_date_appairage,
     user_id as identifiant_utilisateur,
     location as lieu_dernier_appairage
-from {{ ref('products_paired') }}
+from {{ ref('stg_products_paired') }}
 where deposit_id in 
-(select deposit_id from {{ ref('deposit_expired') }}) AND (deposit_id not in (select deposit_id from {{ ref('products_returned') }}))
+(select deposit_id from {{ ref('stg_deposit_expired') }}) AND (deposit_id not in (select deposit_id from {{ ref('stg_products_returned') }}))
 group by
     identifiant_deposit,
     identifiant_produit,

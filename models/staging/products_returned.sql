@@ -1,4 +1,5 @@
 select
+{{ dbt_utils.surrogate_key(['product_id','user_id']) }} as returned_sk,
 deposit_id,
 sent_at,
 product_id,

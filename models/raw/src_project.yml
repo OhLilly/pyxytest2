@@ -1,8 +1,8 @@
 version: 2
 
 sources: 
-  - name: dev
-    database: dev
+  - name: prod
+    database: prod
     schema: prod_backend
     tables:
       - name: product_paired

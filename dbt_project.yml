@@ -40,4 +40,3 @@ models:
       materialized: view
     reporting:
       materialized: table
-    
